@@ -1,0 +1,325 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.Conteudo {
+    width: 414px;
+    height: 932px;
+}
+
+.Conteudo2 {
+    height: 840px;
+    margin-top: 92px;
+}
+
+.BarraTitulo {
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.25);
+    
+}
+
+.BarraTitulo h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    color: #FFFFFF;
+    padding-top: 13px;
+    padding-left: 21px;
+    
+}
+
+.BarraTitulo h2 {
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-top: px;
+    padding-left: 21px;
+    font-weight: 300;
+    
+}
+
+.Bloco-Refeicao {
+    background-color: #EEEEEE;
+    height: 277px;
+}
+
+.Titulo1 {
+    height: 33px;
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    padding-top: 28px;
+    padding-left: 19px;
+}
+
+.Bloco-Prato {
+    background-color: #EEEEEE;
+    width: 414px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.Bloco-Prato::-webkit-scrollbar {
+    width: 100%;
+    height: 5px;
+    display: none;
+  }
+  
+  .Bloco-Prato::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .Bloco-Prato::-webkit-scrollbar-thumb {
+    background-color: gray;    
+    border-radius: 20px;       
+    
+  }
+
+.Prato {
+    background-color: #ffffff;
+    height: 216px;
+    min-width: 172px;
+    box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-left: 19px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.Prato img {
+    width: 144px;
+    height: 87px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-left: 14px;
+    padding-top: 18px;
+}
+
+.Prato h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.Prato h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+}
+
+.Prato h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.Bloco-Liquido {
+    background-color: #EEEEEE;
+    height: 263px;
+}
+
+.Bloco-Bebida {
+    background-color: #EEEEEE;
+    width: 414px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.Bloco-Bebida::-webkit-scrollbar {
+    width: 100%;
+    height: 5px;
+    display: none;
+  }
+  
+  .Bloco-Bebida::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .Bloco-Bebida::-webkit-scrollbar-thumb {
+    background-color: gray;    
+    border-radius: 20px;       
+    
+  }
+
+.Bebida {
+    background-color: #ffffff;
+    height: 202px;
+    min-width: 172px;
+    box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-left: 19px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.Bebida img {
+    width: 144px;
+    height: 87px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 18px;
+}
+
+.Bebida h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.Bebida h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.Bebida h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.Bloco-Sobremesa {
+    background-color: #EEEEEE;
+    height: 300px;
+}
+
+.Bloco-Doce {
+    background-color: #EEEEEE;
+    width: 414px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.Bloco-Doce::-webkit-scrollbar {
+    width: 100%;
+    height: 5px;
+    display: none;
+  }
+  
+  .Bloco-Doce::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .Bloco-Doce::-webkit-scrollbar-thumb {
+    background-color: gray;    
+    border-radius: 20px;       
+    
+  }
+
+.Doce {
+    background-color: #ffffff;
+    height: 202px;
+    min-width: 172px;
+    box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-left: 19px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.Doce img {
+    width: 144px;
+    height: 87px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-left: 14px;
+    padding-top: 18px;
+}
+
+.Doce h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.Doce h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+}
+
+.Doce h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+
+
+.BarraInferior {
+    background-color: #FFFFFF;
+    width: 414px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.BotaoFinalizar {
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BotaoFinalizar p {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 300;
+    padding: 0 90px;
+}
+
+.BotaoVerde {
+    background-color: #32B72F;
+}
+
+
+.prato-selec,
+.bebida-selec,
+.doce-selec {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+.icone {
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    font-size: 19px;
+    color: #32B72F;
+}
+
+
+.escondido {
+    display: none;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Driven Eats</title>
+</head>
+<body>
+    <div class="Conteudo">
+        <div class="BarraTitulo">
+            <h1>DrivenEats</h1>
+            <h2>Sua comida em 6 minutos</h2>
+        </div>
+        <div class="Conteudo2">
+            <div class="Bloco-Refeicao">
+                <div class="Titulo1">
+                    <h1>Primeiro, seu prato</h1>
+                </div>
+                <div class="Bloco-Prato">
+                    <div class="Prato" onclick="escolherPrato(this)">
+                        <img src="Parmegiana.JPG"/>
+                        <h1>Parmegiana</h1>
+                        <h2>Acompanha arroz, fritas e salada</h2>
+                        <div class="preco"><h3>R$ <span class="ValorP">37,50</span></h3></div>
+                        <div class="icone escondido"><ion-icon name="checkmark-circle-outline"></ion-icon></div>
+                    </div>
+                    <div class="Prato" onclick="escolherPrato(this)">
+                        <img src="FileAcebolado.JPG"/>
+                        <h1>Filé Acebolado</h1>
+                        <h2>Acompanha arroz, feijão e fritas</h2>
+                        <h3>R$ <span class="ValorP">35,50</span></h3>
+                    </div>
+                    <div class="Prato" onclick="escolherPrato(this)">
+                        <img src="Salmao.JPG"/>
+                        <h1>Salmão Grelhado</h1>
+                        <h2>Acompanha arroz de brócolis e salada</h2>
+                        <h3>R$ <span class="ValorP">42,50</span></h3>
+                    </div>
+                    <div class="Prato" onclick="escolherPrato(this)">
+                        <img src="Strogonoff.JPG"/>
+                        <h1>Strogonoff (Frango)</h1>
+                        <h2>Acompanha arroz e batata palha</h2>
+                        <h3>R$ <span class="ValorP">32,50</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="Bloco-Liquido">
+                <div class="Titulo1">
+                    <h1>Agora, sua bebida</h1>
+                </div>
+                <div class="Bloco-Bebida">
+                    <div class="Bebida" onclick="escolherBebida(this)">
+                        <img src="Refri.JPG"/>
+                        <h1>Refrigerante</h1>
+                        <h2>Lata 350 ml</h2>
+                        <h3>R$ <span class="ValorB">7,50</span></h3>
+                    </div>
+                    <div class="Bebida" onclick="escolherBebida(this)">
+                        <img src="Agua.JPG"/>
+                        <h1>Água Sem Gás</h1>
+                        <h2>Garrafa 500 ml</h2>
+                        <h3>R$ <span class="ValorB">5,50</span></h3>
+                    </div>
+                    <div class="Bebida" onclick="escolherBebida(this)">
+                        <img src="Corona.JPG"/>
+                        <h1>Corona</h1>
+                        <h2>Long Neck 330 ml</h2>
+                        <h3>R$ <span class="ValorB">11,50</span></h3>
+                    </div>
+                    <div class="Bebida" onclick="escolherBebida(this)">
+                        <img src="Suco.JPG"/>
+                        <h1>Suco de Laranja</h1>
+                        <h2>Copo 500 ml</h2>
+                        <h3>R$ <span class="ValorB">8,50</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="Bloco-Sobremesa">
+                <div class="Titulo1">
+                    <h1>Por fim, sua sobremesa</h1>
+                </div>
+                <div class="Bloco-Doce">
+                    <div class="Doce" onclick="escolherDoce(this)">
+                        <img src="Salada.JPG"/>
+                        <h1>Salada de Frutas</h1>
+                        <h2>Frutas da estação</h2>
+                        <h3>R$ <span class="ValorD">15,50</span></h3>
+                    </div>
+                    <div class="Doce" onclick="escolherDoce(this)">
+                        <img src="Acai.JPG"/>
+                        <h1>Açaí no copo</h1>
+                        <h2>Copo de 500 ml</h2>
+                        <h3>R$ <span class="ValorD">21,50</span></h3>
+                    </div>
+                    <div class="Doce" onclick="escolherDoce(this)">
+                        <img src="Cookie.JPG"/>
+                        <h1>Cookie com Nutella</h1>
+                        <h2>Tradicional Nutella</h2>
+                        <h3>R$ <span class="ValorD">12,50</span></h3>
+                    </div>
+                    <div class="Doce" onclick="escolherDoce(this)">
+                        <img src="PalhaItaliana.JPG"/>
+                        <h1>Palha Italiana</h1>
+                        <h2>Com Leite Ninho</h2>
+                        <h3>R$ <span class="ValorD">11,50</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="BarraInferior">
+            <button disabled class="BotaoFinalizar" onclick="FinalizarPedido()"><p>Selecione os 3 itens para fechar o pedido</p></button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+
+        let ValorFinal = 0;
+        let NomePrato = "";
+        let NomeBebida = "";
+        let NomeDoce = "";
+        let ValorPrato = null;
+        let ValorBebida = null;
+        let ValorDoce = null;
+        let BotaoPedidoFinal = document.querySelector (".BotaoFinalizar");
+
+        function escolherPrato(Prato) {
+        const escolhido = document.querySelector(".prato-selec");
+
+        if (escolhido !== null) {
+            escolhido.classList.remove("prato-selec");
+            ValorPrato = Number(escolhido.querySelector(".ValorP").innerHTML.replace(',','.'));
+            ValorFinal = ValorFinal - ValorPrato;
+
+
+        }
+
+        if (Prato !== escolhido) {
+            Prato.classList.toggle("prato-selec");
+        }
+
+        ValorPrato = Number(Prato.querySelector(".ValorP").innerHTML.replace(',','.'));
+
+        ValorFinal += ValorPrato;
+
+        NomePrato = document.querySelector(".prato-selec h1").innerHTML;
+
+        BotaoSelecao();
+
+        }
+
+        function escolherBebida(Bebida) {
+        const escolhido = document.querySelector(".bebida-selec");
+
+        if (escolhido !== null) {
+            escolhido.classList.remove("bebida-selec");
+
+
+        }
+
+        if (Bebida !== escolhido) {
+            Bebida.classList.toggle("bebida-selec");
+        }
+
+        ValorBebida = Number(Bebida.querySelector(".ValorB").innerHTML.replace(',','.'));
+
+        ValorFinal += ValorBebida;
+
+        NomeBebida = document.querySelector(".bebida-selec h1").innerHTML;
+
+        BotaoSelecao();
+
+        }
+
+        function escolherDoce(Doce) {
+        const escolhido = document.querySelector(".doce-selec");
+
+        if (escolhido !== null) {
+            escolhido.classList.remove("doce-selec");
+
+
+        }
+
+        if (Doce !== escolhido) {
+            Doce.classList.toggle("doce-selec");
+        }
+
+        ValorDoce = Number(Doce.querySelector(".ValorD").innerHTML.replace(',', '.'));
+
+        ValorFinal += ValorDoce;
+
+        NomeDoce = document.querySelector(".doce-selec h1").innerHTML;
+
+        BotaoSelecao();
+
+        }
+
+        function BotaoSelecao () {
+            if (ValorPrato !== null && ValorBebida !== null && ValorDoce !== null){
+                BotaoSelecionado();
+            }
+
+        }
+
+        function BotaoSelecionado(){
+            BotaoPedidoFinal.classList.add("BotaoVerde");
+            document.querySelector(".BotaoVerde").innerHTML="Fechar Pedido";
+            console.log(BotaoPedidoFinal)
+            document.querySelector(".BotaoVerde").disabled=false;
+        }
+
+        function FinalizarPedido () {
+            EnvioWhatsApp = encodeURI(`*Olá, gostaria de fazer o pedido:*\n*- Prato:* ${NomePrato} \n*- Bebida:* ${NomeBebida} \n*- Sobremesa:* ${NomeDoce} \n*Valor:* R$ ${ValorFinal}`);
+
+            window.location.href = "https://wa.me/5521980013132?text=" + EnvioWhatsApp;
+
+        }
+
+    </script>
+</body>
+</html>
